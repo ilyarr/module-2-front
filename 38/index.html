@@ -16,11 +16,9 @@
 
             let total = 0;
             for (let i = 1; i <= value; i++) {
-                const isEven = i % 2 === 0;
-
-                if (type === 'odd' && !isEven) {
+                if (type === 'odd' && !(i % 2 === 0)) {
                     total += i;
-                } else if (type === 'even' && isEven) {
+                } else if (type === 'even' && i % 2 === 0) {
                     total += i;
                 }
             }
@@ -28,10 +26,10 @@
             return total;
         }
 
-        const result1 = sum(6);
+        const result1 = sum(9);
         console.log(result1);
 
-        const result2 = sum(6, 'even');
+        const result2 = sum(9, 'even');
         console.log(result2);
     </script>
 </body>
