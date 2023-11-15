@@ -1,21 +1,21 @@
-const firstName = 'John';
-const lastName = 'Doe';
-const patronymic = 'Smith';
+const firstName = 'Ilya';
+const lastName = 'R';
+const patronymic = 'Johnson';
 const birthYear = 1990;
-const major = 'Информационные технологии';
+const major = 'Прикладная информатика';
 
 const result1 = firstName + ' ' + lastName + '\n' +
                 patronymic + '\n' +
-                'Год рождения: ' + birthYear + '\n' +
+                'Год: ' + birthYear + '\n' +
                 'Направление: ' + major;
 
 const result2 = `${firstName} ${lastName}
 ${patronymic}
-Год рождения: ${birthYear}
+Год: ${birthYear}
 Направление: ${major}`;
 
-console.log('1-й способ:');
+console.log('1 способ:');
 console.log(result1);
 
-console.log('\n2-й способ:');
+console.log('\n2 способ:');
 console.log(result2);

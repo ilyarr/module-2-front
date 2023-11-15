@@ -8,14 +8,14 @@
 <body>
     <script>
         const text = prompt('Введите текст');
-        const word = prompt('Введите слово из текста');
+        const word = prompt('Введите слово:');
         const index = text.indexOf(word);
 
         if (index !== -1) {
             const result = text.substring(0, index + word.length);
             console.log(result);
         } else {
-            console.log('Слово не найдено в тексте.');
+            console.log('Слово не найдено');
         }
     </script>
 </body>
