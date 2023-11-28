@@ -7,16 +7,13 @@
 </head>
 <body>
     <script>
-        const text = prompt('Введите текст');
+        const text = prompt('Введите текст:');
         const word = prompt('Введите слово:');
         const index = text.indexOf(word);
 
-        if (index !== -1) {
-            const result = text.substring(0, index + word.length);
-            console.log(result);
-        } else {
-            console.log('Слово не найдено');
-        }
+        const result = text.slice(0, index);
+        console.log(result);
+
     </script>
 </body>
 </html>

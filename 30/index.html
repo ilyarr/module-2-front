@@ -9,15 +9,15 @@
     <script>
         const text = "всеМ прИвЕт, прИяТно ПоЗНакоМиТьсЯ!";
 
-        const firstChar = text.charAt(0).toUpperCase();
-        const restOfText = text.slice(1).toLowerCase();
-        const modifiedText = firstChar + restOfText;
+        const first = text.charAt(0).toUpperCase();
+        const last = text.slice(1).toLowerCase();
+        const text2 = first + last;
 
-        const result = modifiedText.replace("привет", "пока");
+        textResult = text2.replace("привет", "пока");
 
-        console.log(result);
-        console.log("Количество символов: " + result.length);
-        console.log("Последний символ: " + result.charAt(result.length - 1));
+        console.log(textResult);
+        console.log(textResult.length);
+        console.log(textResult.charAt(textResult.length - 1));
     </script>
 </body>
 </html>

@@ -15,15 +15,15 @@
 
         const sum = num1 + num2;
 
-        const roundedSum = Math.ceil(sum);
+        const ceiling = Math.ceil(sum);
 
-        const formatter = new Intl.NumberFormat('ru-RU', {
-            style: 'currency',
-            currency: 'RUB'
+        const formatter = new Intl.NumberFormat("ru", {
+            style: "currency",
+            currency: "RUB"
         });
 
-        const formattedSum = formatter.format(roundedSum);
-        console.log(formattedSum);
+        const formatted = formatter.format(ceiling);
+        console.log(formatted);
     </script>
 </body>
 </html>

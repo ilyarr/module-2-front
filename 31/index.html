@@ -11,9 +11,9 @@
         const start = prompt('Начальная позиция');
         const end = prompt('Конечная позиция');
 
-        const result = text.substring(start, end + 1);
+        const result = text.slice(Number(start), Number(end) + 1);
 
-        alert(result);
+        console.log(result);
     </script>
 </body>
 </html>
