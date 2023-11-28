@@ -9,25 +9,24 @@
 
 <body>
     <script>
-        function greetingDeclaration(name) {
+        function declaration(name) {
             return `Привет ${name}!`;
         }
 
-        const greetingExpression = function (name) {
+        const expressionNormal = function (name) {
             return `Привет ${name}!`;
         };
 
-        const greetingArrow1 = (name) => {
+        const expressionArrow = (name) => {
             return `Привет ${name}!`;
         };
 
-        const greetingArrow2 = name => `Привет ${name}!`;
+        const expressionArrow2 = name => `Привет ${name}!`;
 
-        console.log(greetingDeclaration('Ilya'));
-        console.log(greetingExpression('Ilya'));
-        console.log(greetingArrow1('Ilya'));
-        console.log(greetingArrow2('Ilya'));
+        console.log(declaration('Ilya'));
+        console.log(expressionNormal('Ilya'));
+        console.log(expressionArrow('Ilya'));
+        console.log(expressionArrow2('Ilya'));
     </script>
 </body>
-
 </html>

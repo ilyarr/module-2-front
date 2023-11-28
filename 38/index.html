@@ -10,29 +10,35 @@
 <body>
     <script>
         function sum(value, type = 'odd') {
-            if (typeof value !== 'number') {
-                return NaN;
-            }
+            if (isNaN(value)) { return NaN; }
 
             let total = 0;
+
             for (let i = 1; i <= value; i++) {
 
-                if (type === 'odd' && !(i % 2 === 0)) {
+                if (type === 'odd' && i % 2 !== 0) {
                     total += i;
                 } else if (type === 'even' && i % 2 === 0) {
                     total += i;
-                }
-                
+                }                
             }
 
             return total;
         }
+        {
+            const result = sum(6);
+            console.log(result);
+        }
 
-        const result1 = sum(9);
-        console.log(result1);
+        {
+            const result = sum(6, "even");
+            console.log(result);
+        }
 
-        const result2 = sum(9, 'even');
-        console.log(result2);
+        {
+            const result = sum("A");
+            console.log(result);
+        }
     </script>
 </body>
 

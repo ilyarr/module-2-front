@@ -9,13 +9,10 @@
 
 <body>
     <script>
-        function statsArray(...args) {
-            const maxElement = Math.max(...args);
-            const minElement = Math.min(...args);
-
-            console.log(`Длина: ${args.length}`);
-            console.log(`Максимальный элемент: ${maxElement}`);
-            console.log(`Минимальный элемент: ${minElement}`);
+        function statsArray() {
+            console.log(`Длина: ${arguments.length}`);
+            console.log(`Максимальный элемент: ${Math.max(...arguments)}`);
+            console.log(`Минимальный элемент: ${Math.min(...arguments)}`);
         }
 
         statsArray(8, 5, 19, 10, 2, 5);

@@ -10,8 +10,7 @@
 <body>
     <script>
         function season(month) {
-
-            if (month >= 1 && month <= 2 || month === 12) {
+            if (month === 1 || month === 2 || month === 12) {
                 return "зима";
             } else if (month >= 3 && month <= 5) {
                 return "весна";
@@ -20,12 +19,11 @@
             } else if (month >= 9 && month <= 11) {
                 return "осень";
             }
-            return "Неверный месяц";
         }
 
-        const monthNumber = 8;
-        const result = season(monthNumber);
-        console.log(`Месяц ${monthNumber} - ${result}`);
+        const month = 10;
+        const result = season(month);
+        console.log(result);
     </script>
 </body>
 
